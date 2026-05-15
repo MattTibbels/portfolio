@@ -1,8 +1,19 @@
 ---
-layout: archive
+layout: categories
+title: "Research Categories"
+permalink: /categories/
+author_profile: true
 ---
 {%- assign locale = page.locale | default: layout.locale | default: site.locale %}
 
-{{ content }}
+<div class="archive__container">
+  {% if content %}
+    <div class="archive__content">
+      {{ content }}
+    </div>
+  {% endif %}
 
-{% include posts-taxonomy.html locale=locale taxonomies=site.categories %}
+  <div class="taxonomy__section">
+    {% include posts-taxonomy.html locale=locale taxonomies=site.categories %}
+  </div>
+</div>

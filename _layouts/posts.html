@@ -1,13 +1,28 @@
 ---
-layout: archive
+layout: home
+title: "Aging Health Research Library"
+entries_layout: grid
+classes: wide
+author_profile: true
+header:
+  overlay_image: /assets/images/research-header.webp # Use your .webp clinical image
+  overlay_filter: 0.5
 ---
+
+Welcome to the Aging Health clinical library. Use the grid below to browse recent 
+investigations, or click into a category for targeted research.
 {%- assign locale = page.locale | default: layout.locale | default: site.locale %}
 
-{{ content }}
+{% if content %}
+  <div class="archive__content">
+    {{ content }}
+  </div>
+{% endif %}
+
+{% assign postsByYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
 
 <ul class="taxonomy__index">
-  {% assign postsInYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
-  {% for year in postsInYear %}
+  {% for year in postsByYear %}
     <li>
       <a href="#{{ year.name }}">
         <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
@@ -17,7 +32,6 @@ layout: archive
 </ul>
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-{% assign postsByYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
 {% for year in postsByYear %}
   <section id="{{ year.name }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ year.name }}</h2>
