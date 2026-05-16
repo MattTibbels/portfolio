@@ -109,6 +109,20 @@ analytics:
     tracking_id          :
     anonymize_ip         : # true, false (default)
 
+# Enable navigation
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+
+# Tell theme to use your nav
+navigation: 
+  main: 
+    - title: "Home"
+      url: /
+
+
 
 # Site Author
 author:

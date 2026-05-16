@@ -1,12 +1,9 @@
-- name: Home
-  link: /
-- name: About
-  link: /about/
-- name: Projects
-  link: /projects/
-- name: Evidence
-  link: /evidence/
-- name: Resume
-  link: /resume/
-- name: Contact
-  link: /contact/
+main:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Projects"
+    url: /projects/
+  - title: "Contact"
+    url: /contact/
