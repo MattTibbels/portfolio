@@ -40,7 +40,7 @@ comments:
     num_posts            : # 0 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
+    remote_theme         : "mmistakes/minimal-mistakes@4.28.0"
     issue_term           : # "pathname" (default)
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
