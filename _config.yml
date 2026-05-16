@@ -107,9 +107,6 @@ analytics:
 # Site Author
 author:
   name             : "Matt Tibbels"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
   email            : 
   links:
     - label: "Email"
@@ -265,6 +262,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-remote_theme
 
 # mimic GitHub Pages with --safe
 whitelist:
