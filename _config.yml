@@ -63,7 +63,7 @@ reCaptcha:
   siteKey                :
   secret                 :
 atom_feed:
-  path                   : # blank (default) uses feed.xml
+  hide: true
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
@@ -85,6 +85,15 @@ source: "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
+
+collections:
+  projects:
+    output: true
+    permalink: /portfolio/projects/:name/
+collections:
+  projects:
+    output: true
+    permalink: /portfolio/projects/:name/
 
 
 # Social Sharing
