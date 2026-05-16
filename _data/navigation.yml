@@ -2,6 +2,6 @@ main:
   - title: "Home"
     url: /
   - title: "Projects"
-    url: /_projects.html
+    url: /projects.html
   - title: "Evidence"
-    url: /_evidence.html
+    url: /evidence.html
