@@ -2,7 +2,7 @@
 title: Power Pivot Fleet Tracker
 summary: Built a reporting dashboard combining device management, asset and location data to improve fleet visibility and lifecycle planning.
 layout: default
-permalink: /_projects/power-pivot-fleet-tracker/
+permalink: /portfolio/projects/power-pivot-fleet-tracker/
 order: 1
 tags:
   - Power Pivot
