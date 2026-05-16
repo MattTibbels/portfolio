@@ -13,7 +13,7 @@ These are selected, sanitised examples of practical ICT, automation and service 
   {% for project in sorted_projects %}
     <article class="card">
       <h2>
-        {{ project.url | relative_url }}
+        <a href="{{ project.url | relative_url }}">
           {{ project.title }}
         </a>
       </h2>
