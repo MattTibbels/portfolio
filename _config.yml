@@ -11,18 +11,18 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "en-us"
 title                    : "Matt Tibbels Portfolio"
 title_separator          : "-"
 name                     : "Matt Tibbels"
 description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://matttibbels.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+url                      :  "https://matttibbels.github.io"
+baseurl                  : "/portfolio"
+repository               : # GitHub username/repo-name e.g. "github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -40,7 +40,7 @@ comments:
     num_posts            : # 0 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    remote_theme         : "mmistakes/minimal-mistakes@4.28.0"
+    
     issue_term           : # "pathname" (default)
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
