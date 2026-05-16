@@ -19,7 +19,7 @@ locale                   : "en-us"
 title                    : "Matt Tibbels Portfolio"
 title_separator          : "-"
 name                     : "Matt Tibbels"
-description              : "An amazing website."
+description              :  ICT service delivery, endpoint management, automation and technical support portfolio
 url                      :  "https://matttibbels.github.io"
 baseurl                  : "/portfolio"
 repository               : "matttibbels/portfolio"
@@ -209,6 +209,39 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+  evidence:
+    output: true
+    permalink: /evidence/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+  - scope:
+      path: "roles"
+    values:
+      layout: landing
+
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+
+  - scope:
+      path: ""
+      type: "evidence"
+    values:
+      layout: evidence
 
 
 # Sass/SCSS
