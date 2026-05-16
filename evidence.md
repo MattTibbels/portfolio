@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Evidence
-permalink: /_evidence/
+permalink: /evidence/
 ---
 
 # Evidence by Capability
@@ -13,7 +13,7 @@ This page maps selected examples to capability areas. Detailed evidence remains 
   {% for item in sorted_evidence %}
     <article class="card">
       <h2>
-        {{ item.url | relative_url }}
+       <a href="{{ item.url | relative_url }}">
           {{ item.title }}
         </a>
       </h2>
