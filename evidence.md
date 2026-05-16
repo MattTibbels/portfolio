@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Evidence
-permalink: /evidence/
+permalink: /_evidence/
 ---
 
 # Evidence by Capability
