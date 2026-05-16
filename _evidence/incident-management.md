@@ -3,6 +3,7 @@ title: Incident Management and Troubleshooting
 summary: Evidence of structured triage, service restoration, stakeholder communication and prevention-focused follow-up.
 order: 1
 layout: single
+permalink: /portfolio/evidence/incident-management/
 tags:
   - Incident management
   - Troubleshooting
