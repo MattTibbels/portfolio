@@ -1,6 +1,7 @@
 ---
 title: Project Title
 summary: One-sentence public summary.
+layout: default
 order: 1
 tags:
   - Skill one
