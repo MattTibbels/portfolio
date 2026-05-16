@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-permalink: /_projects/
+permalink: /projects/
 ---
 
 # Projects
@@ -17,9 +17,7 @@ These are selected, sanitised examples of practical ICT, automation and service 
           {{ project.title }}
         </a>
       </h2>
-
       <p>{{ project.summary }}</p>
-
       {% if project.tags %}
         <ul class="badge-list">
           {% for tag in project.tags %}
