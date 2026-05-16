@@ -89,11 +89,11 @@ gem "jekyll-include-cache", group: :jekyll_plugins
 collections:
   projects:
     output: true
-    permalink: /portfolio/projects/:name/
+    permalink: /portfolio/_projects/:name/
 collections:
-  projects:
+  evidence:
     output: true
-    permalink: /portfolio/projects/:name/
+    permalink: /portfolio/_evidence/:name/
 
 
 # Social Sharing
