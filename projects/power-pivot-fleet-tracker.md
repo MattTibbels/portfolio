@@ -12,7 +12,6 @@ tags:
   - Data visualisation
 ---
 
-# Power Pivot Fleet Tracker
 
 ## Overview
 
