@@ -35,6 +35,7 @@ flowchart TD
     C -- "1 : Many" --> A
 ```
 
+
 ## Context
 
 This work was completed in a NSW public primary school with approximately 900 student and staff devices. Device information existed across multiple systems, but there was no single operational view that showed where devices were located and how old they were at a classroom level. Leadership had previously asked for better visibility, but accurate and usable location data was not available at the time.
