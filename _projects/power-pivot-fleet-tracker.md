@@ -86,7 +86,9 @@ flowchart LR
     D --> E[Device Age View]
     D --> F[Classroom Deployment View]
     D --> G[Model and Fleet Summary View]
+```
 
+```mermaid
 erDiagram
     CDM_DEVICE_EXPORT {
         string SerialNumber
