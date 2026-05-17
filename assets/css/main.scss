@@ -25,3 +25,40 @@
   background-color: #3d495d;
   transition: background-color 0.2s ease;
 }
+/* Turning bullets into horizontal pills/badges */
+.badge-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge-list li {
+  background-color: #2d3748;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  overflow: hidden; /* Keeps the hover effect inside the rounded corners */
+  transition: background-color 0.2s ease;
+}
+
+/* Nuke default browser button styles and apply theme colors */
+.badge-list .tag-filter-btn {
+  background: transparent !important;
+  border: none !important;
+  color: #00bcd4 !important; /* Your teal accent color */
+  font: inherit !important;
+  padding: 4px 12px !important; /* Padding inside the button makes it easier to tap on mobile */
+  margin: 0 !important;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hover effect on the card pill */
+.badge-list li:hover {
+  background-color: #3d495d;
+}
