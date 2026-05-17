@@ -7,54 +7,21 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/* ==========================================================================
-   Custom Project Cards
-   ========================================================================== */
-
-/* Container for the grid */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-
-/* Individual project cards */
-.card {
-  background-color: #1e2530; /* Slightly lighter than your background */
-  border: 1px solid #2d3748;
-  border-radius: 8px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.card h2 {
-  margin-top: 0;
-  font-size: 1.4rem;
-}
-
-.card p {
-  color: #cbd5e0;
-  font-size: 0.95rem;
-  flex-grow: 1; /* Pushes the tags to the bottom of the card */
-}
-
-/* Turning bullets into horizontal pills/badges */
-.badge-list {
-  list-style: none;
+/* Reset button styling inside the badge list */
+.badge-list button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
   padding: 0;
-  margin: 15px 0 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  margin: 0;
+  width: 100%;
+  text-align: left;
 }
 
-.badge-list li {
-  background-color: #2d3748;
-  color: #00bcd4; /* Matches your teal accent color */
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 0.8rem;
-  font-weight: 500;
+/* Optional: Slight hover effect to show the badges are interactive */
+.badge-list li:hover {
+  background-color: #3d495d;
+  transition: background-color 0.2s ease;
 }
