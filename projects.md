@@ -11,7 +11,7 @@ These are selected, sanitised examples of practical ICT, automation and service 
 <div class="card-grid">
   {% assign sorted_projects = site.projects | sort: "order" %}
   {% for project in sorted_projects %}
-    <article class="card">
+    <article class="card">https://github.com/MattTibbels/portfolio">
       <h2>
         <a href="{{ project.url | relative_url }}">
           {{ project.title }}
