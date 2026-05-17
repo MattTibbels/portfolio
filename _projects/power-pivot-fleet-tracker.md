@@ -20,7 +20,7 @@ mermaid: true
 
 I created an Excel Power Pivot dashboard to give school leadership a clear view of the device fleet across a NSW public primary school. The dashboard joined CDM exports, the school asset register and a custom location table to show device age, model and classroom deployment in one place. This made it easier to prioritise replacements and identify where older devices were still in use.
 
-```mermaid
+~~~mermaid
 flowchart TD
     subgraph Dimension_Tables["Lookup Tables (Dimensions)"]
         B[School Asset Register<br><b>PrimaryKey:</b> Serial Number<br><i>Purchase date</i>]
@@ -33,8 +33,7 @@ flowchart TD
 
     B -- "1 : Many" --> A
     C -- "1 : Many" --> A
-```
-
+~~~
 
 ## Context
 
