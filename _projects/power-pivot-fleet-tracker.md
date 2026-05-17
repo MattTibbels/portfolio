@@ -31,8 +31,8 @@ flowchart TD
         A[CDM Device Export<br><b>ForeignKey:</b> Serial Number<br><b>ForeignKey:</b> Asset Location Code<br><i>Model, status, etc.</i>]
     end
 
-    B -- "1 : Many" --> A
-    C -- "1 : Many" --> A
+    B -- "1 : 1" --> A
+    C -- "1 : 1" --> A
 ~~~
 
 ## Context
@@ -76,6 +76,8 @@ Using Power Pivot:
 - CDM data and the asset register were joined by serial number.
 - CDM data and the location table were joined by asset location code.
 - Input tables, relationships and reporting views were kept clearly separated.
+
+~~~mermaid
 flowchart LR
     A[CDM Device Export] -->|Device data| D[Power Pivot Data Model]
     B[School Asset Register] -->|Purchase dates| D
@@ -104,6 +106,7 @@ erDiagram
 
     CDM_DEVICE_EXPORT ||--|| SCHOOL_ASSET_REGISTER : "Joined by Serial Number"
     CDM_DEVICE_EXPORT ||--|| LOCATION_MAPPING_TABLE : "Joined by Asset Location"
+~~~
 
 ### 4. Lifecycle calculations
 Purchase dates from the asset register were used to calculate device age. Devices were grouped into age bands to support replacement planning and prioritisation.
