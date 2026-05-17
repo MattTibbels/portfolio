@@ -39,3 +39,75 @@
 @import "minimal-mistakes/archive";
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
+/* ==========================================================================
+   Custom Project Cards & Filtering Grid
+   ========================================================================== */
+
+/* Container for the grid */
+.card-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+  gap: 20px !important;
+  margin-top: 20px !important;
+}
+
+/* Individual project cards */
+.card {
+  background-color: #1e2530 !important; 
+  border: 1px solid #2d3748 !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+  display: flex !important;
+  flex-direction: column !important; /* Forces title, text, and badges to stack vertically */
+}
+
+.card h2 {
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+  font-size: 1.4rem !important;
+}
+
+.card p {
+  color: #cbd5e0 !important;
+  font-size: 0.95rem !important;
+  flex-grow: 1 !important; /* Pushes the tags neatly to the bottom of the card */
+  margin-bottom: 15px !important;
+}
+
+/* Turning bullets into horizontal pills/badges */
+.badge-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 15px 0 0 0 !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+}
+
+.badge-list li {
+  background-color: #2d3748 !important;
+  border-radius: 12px !important;
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  overflow: hidden !important; 
+  transition: background-color 0.2s ease !important;
+}
+
+/* Nuke default browser button styles inside badges */
+.badge-list .tag-filter-btn {
+  background: transparent !important;
+  border: none !important;
+  color: #00bcd4 !important; /* Your theme's teal accent */
+  font: inherit !important;
+  padding: 4px 12px !important; 
+  margin: 0 !important;
+  cursor: pointer !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Hover effect on the card pill */
+.badge-list li:hover {
+  background-color: #3d495d !important;
+}
