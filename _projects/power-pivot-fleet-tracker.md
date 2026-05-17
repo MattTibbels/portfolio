@@ -108,6 +108,7 @@ erDiagram
     CDM_DEVICE_EXPORT ||--|| LOCATION_MAPPING_TABLE : "Joined by Asset Location"
 ~~~
 
+
 ### 4. Lifecycle calculations
 Purchase dates from the asset register were used to calculate device age. Devices were grouped into age bands to support replacement planning and prioritisation.
 
