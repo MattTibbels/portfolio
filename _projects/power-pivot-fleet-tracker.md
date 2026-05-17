@@ -61,7 +61,7 @@ I built this independently as the ICT Coordinator. It was an operational artefac
 - Power Pivot
 - CDM device export (serial number, model, asset location)
 - School asset register (serial number, purchase date)
-- Custom location mapping table (asset location code to plain language classroom name)
+- Custom location mapping table (asset location code to plain language classroom/office name)
 
 ## Approach
 
