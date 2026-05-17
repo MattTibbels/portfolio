@@ -20,12 +20,19 @@ mermaid: true
 
 I created an Excel Power Pivot dashboard to give school leadership a clear view of the device fleet across a NSW public primary school. The dashboard joined CDM exports, the school asset register and a custom location table to show device age, model and classroom deployment in one place. This made it easier to prioritise replacements and identify where older devices were still in use.
 
-flowchart TB
-    subgraph Data_Sources["Data sources"]
-        A[CDM Device Export\nSerial number, model, asset location]
-        B[School Asset Register\nSerial number, purchase date]
-        C[Location Mapping Table\nAsset code to classroom name]
+flowchart TD
+    subgraph Dimension_Tables["Lookup Tables (Dimensions)"]
+        B[School Asset Register<br><b>PrimaryKey:</b> Serial Number<br><i>Purchase date</i>]
+        C[Location Mapping Table<br><b>PrimaryKey:</b> Asset Location Code<br><i>Classroom Name</i>]
     end
+
+    subgraph Fact_Table["Central Table (Fact)"]
+        A[CDM Device Export<br><b>ForeignKey:</b> Serial Number<br><b>ForeignKey:</b> Asset Location Code<br><i>Model, status, etc.</i>]
+    end
+
+    B -- "1 : Many" --> A
+    C -- "1 : Many" --> A
+
 
 ## Context
 
