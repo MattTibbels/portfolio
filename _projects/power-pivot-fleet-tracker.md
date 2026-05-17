@@ -27,25 +27,6 @@ flowchart TB
         C[Location Mapping Table\nAsset code to classroom name]
     end
 
-    subgraph Data_Model["Power Pivot data model"]
-        D[Joined by Serial Number\nand Asset Location]
-    end
-
-    subgraph Outputs["Dashboard outputs"]
-        E[Device age and lifecycle view]
-        F[Classroom deployment view]
-        G[Replacement priority view]
-    end
-
-    A --> D
-    B --> D
-    C --> D
-
-    D --> E
-    D --> F
-    D --> G
-
-
 ## Context
 
 This work was completed in a NSW public primary school with approximately 900 student and staff devices. Device information existed across multiple systems, but there was no single operational view that showed where devices were located and how old they were at a classroom level. Leadership had previously asked for better visibility, but accurate and usable location data was not available at the time.
