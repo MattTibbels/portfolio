@@ -45,6 +45,7 @@ These are selected, sanitised examples of practical ICT, automation and service 
   {% endfor %}
 </div>
 
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const tagButtons = document.querySelectorAll('.tag-filter-btn');
